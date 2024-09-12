@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Basics 01</title>
+    <link rel="stylesheet" href="css/style.css">
+     <!-- Link til den eksterne JavaScript-fil -->
+</head>
+<body>
+
+<main>
+    <!-- Black Coffee Section -->
+    <section>
+        <h3>Black Coffee</h3>
+        <aside>
+            <label for="cart">Cart</label>
+            <input type="number" name="coffee" id="coffee" value="0" disabled>
+        </aside>
+        <aside>
+            <label for="coffee-price">Price per unit:</label>
+            <input type="number" name="coffee-price" id="coffee-price" value="10" disabled>
+        </aside>
+        <aside>
+            <label for="coffee-total">Total price:</label>
+            <input type="number" name="coffee-total" id="coffee-total" value="0" disabled>
+        </aside>
+
+        <aside><button onclick="addToCart('coffee');">Add to Cart</button></aside>
+        <aside><button onclick="removeFromCart('coffee');">Remove from Cart</button></aside>
+        <aside><button onclick="increaseQuantity('coffee', 2);">+2</button></aside>
+        <aside><button onclick="increaseQuantity('coffee', 3);">+3</button></aside>
+        <aside><button onclick="resetCart('coffee');">Reset Cart</button></aside>
+    
+    </section>
+    <!-- Espresso Section -->
+    <section>
+        <h3>Espresso</h3>
+        <aside>
+            <label for="cart">Cart</label>
+            <input type="number" name="espresso" id="espresso" value="0" disabled>
+        </aside>
+        <aside>
+            <label for="espresso-price">Price per unit:</label>
+            <input type="number" name="espresso-price" id="espresso-price" value="18" disabled>
+        </aside>
+        <aside>
+            <label for="espresso-total">Total price:</label>
+            <input type="number" name="espresso-total" id="espresso-total" value="0" disabled>
+        </aside>
+
+        <aside><button onclick="addToCart('espresso');">Add to Cart</button></aside>
+        <aside><button onclick="removeFromCart('espresso');">Remove from Cart</button></aside>
+        <aside><button onclick="increaseQuantity('espresso', 2);">+2</button></aside>
+        <aside><button onclick="increaseQuantity('espresso', 3);">+3</button></aside>
+        <aside><button onclick="resetCart('espresso');">Reset Cart</button></aside>
+
+    </section>
+    <!-- Latte Section -->
+    <section>
+        <h3>Latte</h3>
+        <aside>
+            <label for="cart">Cart</label>
+            <input type="number" name="latte" id="latte" value="0" disabled>
+        </aside>
+        <aside>
+            <label for="latte-price">Price per unit:</label>
+            <input type="number" name="latte-price" id="latte-price" value="22" disabled>
+        </aside>
+        <aside>
+            <label for="latte-total">Total price:</label>
+            <input type="number" name="latte-total" id="latte-total" value="0" disabled>
+        </aside>
+
+        <aside><button onclick="addToCart('latte');">Add to Cart</button></aside>
+        <aside><button onclick="removeFromCart('latte');">Remove from Cart</button></aside>
+        <aside><button onclick="increaseQuantity('latte', 2);">+2</button></aside>
+        <aside><button onclick="increaseQuantity('latte', 3);">+3</button></aside>
+        <aside><button onclick="resetCart('latte');">Reset Cart</button></aside>
+
+    </section>
+
+    <section>
+        <h3>Checkout:</h3>
+        <aside>
+            <label for="totalSumCart">Total sum:</label>
+            <input type="number" name="totalSum" id="totalSum" disabled>
+        </aside>
+    </section>
+    
+    <aside><button onclick="goToCheckout();">Go to Checkout</button></aside>
+
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>
